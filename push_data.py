@@ -7,7 +7,6 @@ load_dotenv()
 from collections.abc import MutableMapping
 from collections import namedtuple
 
-
 MONGO_DB_URL=os.getenv("MONGO_DB_URL")
 print(MONGO_DB_URL)
 
@@ -52,7 +51,7 @@ class NetworkDataExtract():
             raise NetworkSecurityException(e,sys)
         
 if __name__=='__main__':
-    FILE_PATH="Network_Data\phisingData.csv"
+    FILE_PATH="/Users/krunaldesai/Desktop/Projects/NetworkSecurity/Network_Data/phisingData.csv"
     DATABASE="KRUNALAI"
     Collection="NetworkData"
     networkobj=NetworkDataExtract()
